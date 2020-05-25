@@ -1,4 +1,3 @@
 # AOP-Model
 
-The code, written in Matlab Software, is related to the determination of the AOP based on the SDS data. Fk4 wavelet has been used by default.
-The user can change wavelet type and see the result. 
+The code, written in Matlab Software, is related to the determination of the AOP based on the refined SDS data. Fk4 wavelet has been used by default. The user can change wavelet type and see the result. 
