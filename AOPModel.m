@@ -1,8 +1,8 @@
 clear
-load('SDSData')
+load('CN')
 
-for q=10:length(Cr)
-[C,L] = wavedec(Cr(1:q),1,'fk4');
+for q=10:length(CN)
+[C,L] = wavedec(CN(1:q),1,'fk4');
 V(q-9,1:length(C))=C;
 X(q-9,1:length(L))=L;
 a(q-9,1:q)= wrcoef('a',V(q-9,:),X(q-9,:),'fk4',1);
@@ -12,7 +12,7 @@ for k=1:1
 end
 end
 
-for i=1:length(Cr)-9
+for i=1:length(CN)-9
     ENT(i)=0;
     RE(i)=max(E(i,:))./sum(sum(E(i,:,:)));
 ENT(i)=RE(i)*log(RE(i))+ENT(i);
